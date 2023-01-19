@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List </title>
+    <style>
+        h3{
+            color:cornflowerblue;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        div{
+            padding: 5px;
+        }
+        button{
+            margin-left: 7%;
+            margin-top: 2%;
+        }
+        th{
+            text-decoration: underline;
+            padding-right: 50px;
+            color: coral;
+            
+        }
+        input{
+            width: 7cm;
+        }
+        input:active{
+            border-color: blue;
+        }
+        .message{
+            font-size: 20px;
+            margin-left: 1%;
+            color: white;
+            width: 10cm;
+            text-align: center;
+            margin-left: -4%;
+        }
+        body{
+            margin-left: 33%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Book List</h1>
+    <h3> Add a book to shelf </h3>
+
+    
+
+    <form id="bookForm">
+        <div>
+            <label for="title" > Title </label> <br>
+            <input type="text" class="title" placeholder="enter a book name">
+        </div>
+
+        <div>
+            <label for="Author"> Author </label><br>
+            <input type="text" class="author" placeholder="enter author name">
+        </div>
+
+        <div>
+            <label for="book-id"> book-id </label> <br>
+            <input type="text" class="book-id" placeholder="enter a book ID">
+        </div>
+
+        <button value="submit" type="submit"> Add to shelf </button> <br>
+        <p class="message"></p>
+    </form> <br><br>
+    
+
+    <table class="book-shelf">
+        <thead>
+            <tr>
+                <th class="bookName">Book Name</th>
+                <th class="authorName">Author Name</th>
+                <th class="bookID">Book ID</th>
+                <th class="remover"></th>
+            </tr>
+        </thead>
+        <tbody class="book-list"></tbody>
+
+    </table>
+    <script src="BookList.js"></script>
+</body>
+</html>
